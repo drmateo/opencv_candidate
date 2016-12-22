@@ -13,10 +13,10 @@ include_directories(SYSTEM ${PCL_INCLUDE_DIRS}
 )
 
 # Find Eigen3
-FIND_PACKAGE(Eigen3)
+FIND_PACKAGE(Eigen)
 find_package(libg2o)
 
-include_directories(SYSTEM ${EIGEN3_INCLUDE_DIRS})
+include_directories(SYSTEM ${EIGEN_INCLUDE_DIRS})
 
 # add reconst3d library
 file(GLOB reconst3d_sources "*.cpp")

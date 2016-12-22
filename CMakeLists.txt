@@ -3,7 +3,7 @@ project(opencv_candidate)
 
 find_package(catkin REQUIRED)
 find_package(libg2o QUIET)
-find_package(OpenCV REQUIRED)
+find_package(OpenCV)
 find_library(DEPTH_SENSE_LIBRARIES DepthSense /opt/DepthSenseSDK/lib)
 
 if (${DEPTH_SENSE_LIBRARIES} STREQUAL DEPTH_SENSE_LIBRARIES-NOTFOUND)
